@@ -1,15 +1,7 @@
 import PySimpleGUI as sg
 import math
 
-def format_history(prev_expressions):
-  if len(prev_expressions) == 0:
-    return "No history how"
 
-  n = min(len(prev_expressions), 6)
-  history_str = "Last " + str(n) + " exp:\n\n"
-  for i in range(-n, 1):
-    history_str += prev_expressions[i] + "\n"
-  return history_str
 
 
 def calculator():
